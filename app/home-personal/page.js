@@ -7,17 +7,16 @@ import Footer from '@/components/common/Footer';
 import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
-import Header from '@/components/home-personal/Header';
 import Clients from '@/components/common/Clients';
 
 import Blog from '@/components/home-digital-agency/Blog';
 
 import Testimonials from '@/components/home-modern-studio/Testimonials';
-import Marq from '@/components/home-personal/Marq';
-import About from '@/components/home-personal/About';
-import Services from '@/components/home-personal/Services';
-import Skills from '@/components/home-personal/Skills';
-import Portfolio from '@/components/home-personal/Portfolio';
+
+import Header from '@/components/home-main/Header';
+import Marq from '@/components/home-main/Marq';
+import Services from '@/components/home-creative-agency/Services';
+import Portfolio from '@/components/home-creative-agency/Portfolio';
 
 export const metadata = {
   title: 'webfolio',
@@ -46,10 +45,8 @@ export default function Home() {
           <main className="main-bg o-hidden">
             <Header />
             <Marq />
-            <About />
             <Services />
             <Portfolio />
-            <Skills />
             <Testimonials />
             <Clients />
             <Blog />
