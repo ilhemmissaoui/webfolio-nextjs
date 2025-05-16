@@ -81,7 +81,7 @@ function Portfolio() {
                     <span className="mr-10 fz-16">01.</span>{' '}
                     <a href="/project-details">Iridescent Wallpapers</a>
                   </h4>
-                  <h6 className="sub-title p-color ml-20">/ UI-UX Design</h6>
+                  <h6 className="sub-title p-color ml-20">/ Graphic design</h6>
                 </div>
                 <div className="img">
                   <img src="/assets/imgs/works/1/1.jpg" alt="" />

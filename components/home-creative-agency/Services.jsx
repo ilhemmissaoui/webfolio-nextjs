@@ -1,6 +1,6 @@
 import React from 'react';
-import data from '@/data/services';
-
+import Link from 'next/link'
+import services from '@/data/services.json'
 function Services() {
   return (
     <section className="services-crev section-padding">
@@ -19,20 +19,16 @@ function Services() {
           </h6>
         </div>
         <div className="row sm-marg">
-          {data.map((item, i) => (
-            <div key={i} className="col-lg-3 col-md-6">
-              <div className="item-box radius-15 md-mb30">
-                <h5 className="mb-80 text-u">
-                  <span className="mr-40 fz-14 main-color">01</span>
-                  {item.title}
-                </h5>
-                <div className="icon mb-20 opacity-5">
-                  <img src={item.img} alt="" />
-                </div>
-                <p>{item.desc.slice(0, 50)} </p>
-              </div>
-            </div>
-          ))}
+      {services.map((item, index) => (
+  <div key={index}>
+    <img src={item.img} alt={item.title} />
+    <h3>{item.title}</h3>
+    <p>{item.desc}</p>
+    <Link href={`/page-services-details/${item.slug}`}>
+      <a>Read more</a>
+    </Link>
+  </div>
+))}
         </div>
         <div className="sec-bottom mt-100">
           <div className="main-bg d-flex align-items-center">

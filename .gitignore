@@ -1,1 +1,43 @@
 "node_modules/\npublic/assets/videos/Final Comp.mp4" 
+# Node modules
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+.pnp/
+.pnp.js
+
+# Testing
+coverage/
+jest.config.js
+
+# Environment variables
+.env*
+!.env.example
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Optional: OS-specific or IDE files
+.idea/
+*.swp
+*.swo
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Next.js export
+exported/
+

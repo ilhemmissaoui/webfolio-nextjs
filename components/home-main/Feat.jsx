@@ -1,6 +1,6 @@
-'use client';
-import loadBackgroudImages from '@/common/loadBackgroudImages';
-import React, { useEffect } from 'react';
+"use client";
+import loadBackgroudImages from "@/common/loadBackgroudImages";
+import React, { useEffect } from "react";
 
 function Feat() {
   useEffect(() => {
@@ -12,14 +12,16 @@ function Feat() {
         <div className="row">
           <div className="col-lg-5">
             <div className="cont md-mb50">
-              <h6 className="sub-title main-color mb-15">Trusted Services</h6>
-              <h3 className="mb-30">
-                The service we offer is specifically designed to meet your
-                needs.
-              </h3>
+              <h3 className="mb-30">Our Main Goal to Satisfy Our Clients</h3>
+              <h6 className="sub-title main-color mb-15">
+                We value teamwork and collaboration, both within our team and
+                with our clients
+              </h6>
+
               <p>
-                Driven professional dedicated to making a lasting impact through
-                innovative solutions and unwavering excellence.
+                We are committed to exceeding the expectations of our local
+                clients by providing tailored digital solutions, ensuring their
+                complete satisfaction through dedicated and innovative services.
               </p>
               <a
                 href="/page-about"
@@ -43,7 +45,7 @@ function Feat() {
                 ></div>
                 <div className="col-md-8">
                   <div className="info">
-                    <h5 className="mb-15">Web Design</h5>
+                    <h5 className="mb-15">Continuous Improvement</h5>
                     <p>
                       This is the main factor that sets us apart from our
                       competition and allows us .
@@ -52,6 +54,7 @@ function Feat() {
                 </div>
               </div>
             </div>
+
             <div className="item mb-30">
               <div className="row">
                 <div
@@ -60,7 +63,7 @@ function Feat() {
                 ></div>
                 <div className="col-md-8">
                   <div className="info">
-                    <h5 className="mb-15">Branding</h5>
+                    <h5 className="mb-15">Integrity</h5>
                     <p>
                       This is the main factor that sets us apart from our
                       competition and allows us .
@@ -69,6 +72,7 @@ function Feat() {
                 </div>
               </div>
             </div>
+            
             <div className="item">
               <div className="row">
                 <div
@@ -77,7 +81,7 @@ function Feat() {
                 ></div>
                 <div className="col-md-8">
                   <div className="info">
-                    <h5 className="mb-15">Marketing</h5>
+                    <h5 className="mb-15">Collaboration</h5>
                     <p>
                       This is the main factor that sets us apart from our
                       competition and allows us .
@@ -86,6 +90,7 @@ function Feat() {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

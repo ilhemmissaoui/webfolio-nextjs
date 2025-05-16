@@ -6233,6 +6233,14 @@ footer.clean-footer.crev .circle-blur {
 
 /* Process
 -----------------------------------------------------------------*/
+.item-box {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 .process .item {
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }

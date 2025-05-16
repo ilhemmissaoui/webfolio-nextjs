@@ -1,40 +1,31 @@
-import generateStylesheetObject from "@/common/generateStylesheetsObject";
-import Lines from "@/components/common/Lines";
-import ProgressScroll from "@/components/common/ProgressScroll";
-import Cursor from "@/components/common/cusor";
-import LoadingScreen from "@/components/common/loader";
-import Clients from "@/components/home-main/Clients";
-import Feat from "@/components/home-main/Feat";
-import Footer from "@/components/common/Footer";
-import Header from "@/components/home-main/Header";
-import Intro from "@/components/home-main/Intro";
-import Marq2 from "@/components/common/Marq2";
-import Navbar from "@/components/common/Navbar";
-import Portfolio from "@/components/home-main/Portfolio";
-import Services from "@/components/home-main/Services";
-import Team from "@/components/home-main/Team";
-import Testimonials from "@/components/home-main/Testimonials";
-import Script from "next/script";
-import Marq from "@/components/home-main/Marq";
-import { getTranslations } from "next-intl/server";
+import generateStylesheetObject from '@/common/generateStylesheetsObject';
+import Lines from '@/components/common/Lines';
+import ProgressScroll from '@/components/common/ProgressScroll';
+import Cursor from '@/components/common/cusor';
+import LoadingScreen from '@/components/common/loader';
+import Footer from '@/components/common/Footer';
+import Marq2 from '@/components/common/Marq2';
+import Navbar from '@/components/common/Navbar';
+import Script from 'next/script';
+import Header from '@/components/page-marketing-digital/Header';
+import Intro from '@/components/page-marketing-digital/Intro';
+import Feat from '@/components/page-marketing-digital/Feat';
 
 export const metadata = {
-  title: "soleDigital",
+  title: 'webfolio',
   icons: {
-    icon: "/assets/imgs/favicon.ico",
-    shortcut: "/assets/imgs/favicon.ico",
+    icon: '/assets/imgs/favicon.ico',
+    shortcut: '/assets/imgs/favicon.ico',
     other: generateStylesheetObject([
-      "/assets/css/plugins.css",
-      "/assets/css/style.css",
-      "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap",
-      "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap",
+      '/assets/css/plugins.css',
+      '/assets/css/style.css',
+      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
+      'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap',
     ]),
   },
 };
 
-export default async function Home() {
-  const t = await getTranslations("HomePage");
-
+export default function Home() {
   return (
     <body>
       <LoadingScreen />
@@ -45,19 +36,10 @@ export default async function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main className="main-bg o-hidden">
-            <div></div>
-
             <Header />
-            {/* <h1>{t("title")}</h1> */}
-
             <Intro />
-            <Marq />
-            <Services />
-            <Portfolio />
             <Feat />
-            {/* <Team /> */}
-            <Testimonials />
-            <Clients />
+            <Intro />
             <Marq2 />
           </main>
           <Footer />
@@ -103,7 +85,9 @@ export default async function Home() {
         strategy="beforeInteractive"
         src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
       ></Script>
+
       {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
+
       <Script src="/assets/js/scripts.js"></Script>
     </body>
   );

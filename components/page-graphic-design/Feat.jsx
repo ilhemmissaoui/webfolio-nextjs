@@ -2,28 +2,26 @@ import React from 'react';
 
 function Feat() {
   return (
-    <section className="feat sub-bg">
-      <div className="container section-padding bord-top-grd">
+    <section className="feat">
+      <div className="container">
         <div className="sec-head mb-80">
-          <div className="d-flex align-items-center">
-            <div>
-              <span className="sub-title main-color mb-5">Our Specialize</span>
-              <h3 className="fw-600 fz-50 text-u d-rotate wow">
-                <span className="rotate-text">
-                  Featured <span className="fw-200">Services.</span>
-                </span>
-              </h3>
-            </div>
+          <div className="d-flex align-items-center mb-30">
+            <h2 className="fw-600 fz-70 text-u d-rotate wow">
+              <span className="rotate-text">
+                How It <span className="fw-200">Work</span>
+              </span>
+            </h2>
             <div className="ml-auto vi-more">
-              <a
-                href="/page-services"
-                className="butn butn-sm butn-bord radius-30"
-              >
+              <a href="#0" className="butn butn-sm butn-bord radius-30">
                 <span>View All</span>
               </a>
               <span className="icon ti-arrow-top-right"></span>
             </div>
           </div>
+          <h6 className="sub-title main-color d-flex align-items-center">
+            <span>Our approach</span>
+            <span className="thin"></span>
+          </h6>
         </div>
         <div className="row">
           <div className="col-lg-3 col-md-6">
@@ -32,7 +30,7 @@ function Feat() {
                 <img src="/assets/imgs/serv-icons/3.png" alt="" />
               </div>
               <span className="mb-30 p-color">01 .</span>
-              <h6 className="mb-20">Digital marketing</h6>
+              <h6 className="mb-20">Digital Product Design</h6>
               <p>
                 Live workshop where we define the main problems and challenge.
               </p>
@@ -56,7 +54,7 @@ function Feat() {
                 <img src="/assets/imgs/serv-icons/5.png" alt="" />
               </div>
               <span className="mb-30 p-color">03 .</span>
-              <h6 className="mb-20">Content creation</h6>
+              <h6 className="mb-20">Branding Design</h6>
               <p>
                 Live workshop where we define the main problems and challenge.
               </p>
