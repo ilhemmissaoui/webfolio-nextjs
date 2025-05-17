@@ -37,9 +37,11 @@ function Navbar() {
     nav?.classList.toggle("show");
   }
 
-  function setLanguageValue(newLocale) {
-    const newPath = `/${newLocale}${pathname.replace(/^\/(en|fr|ar)/, "")}`;
-    router.push(newPath);
+  // Set locale cookie and reload page
+  function switchLanguage(newLocale) {
+    if (newLocale === locale) return;
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/`;
+    window.location.reload();
   }
 
   return (
@@ -161,7 +163,7 @@ function Navbar() {
                     className={`dropdown-item ${
                       locale === "en" ? "active" : ""
                     }`}
-                    onClick={() => setLanguageValue("en")}
+                    onClick={() => switchLanguage("en")}
                   >
                     English
                   </button>
@@ -171,7 +173,7 @@ function Navbar() {
                     className={`dropdown-item ${
                       locale === "fr" ? "active" : ""
                     }`}
-                    onClick={() => setLanguageValue("fr")}
+                    onClick={() => switchLanguage("fr")}
                   >
                     French
                   </button>
@@ -181,7 +183,7 @@ function Navbar() {
                     className={`dropdown-item ${
                       locale === "ar" ? "active" : ""
                     }`}
-                    onClick={() => setLanguageValue("ar")}
+                    onClick={() => switchLanguage("ar")}
                   >
                     Arabic
                   </button>

@@ -48,7 +48,7 @@ export default async function Home() {
             <div></div>
 
             <Header />
-            {/* <h1>{t("title")}</h1> */}
+            <h1>{t("title")}</h1>
 
             <Intro />
             <Marq />
