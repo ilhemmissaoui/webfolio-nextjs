@@ -21,28 +21,27 @@ function Intro() {
               <div className="row lg-marg">
                 <div className="col-md-6">
                   <div>
-                    <h6 className="sub-title main-color mb-15">Description</h6>
+                    <h6 className="sub-title main-color mb-15">
+                      Sole digital media
+                    </h6>
                     <h3 className="mb-30">
-                      We believe in the power of{" "}
-                      <span className="fw-300">individual</span>{" "}
-                      <span className="fw-300">contribution.</span>
+                      We believe in the power of web development to drive
+                      societal change
+                      <span className="fw-300">one line of code</span>{" "}
+                      <span className="fw-300">at a time.</span>
                     </h3>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="text">
                     <p className="mb-15">
-                      At Sole Digital Media, we offer a comprehensive range of
-                      digital marketing services designed to elevate your
-                      brand’s online presence and drive measurable results. Our
-                      expert team employs cutting-edge strategies and innovative
-                      solutions tailored to meet your business needs. Explore
-                      our core services below to see how we can help you achieve
-                      your marketing goals
-                    </p>
-                    <p>
-                      Taken possession of my entire soul, like these sweet
-                      mornings of spring which i enjoy with my whole.
+                      At Sole Digital Media, we deliver comprehensive web and
+                      e-commerce solutions that boost your digital presence and
+                      unlock business growth. From design to deployment and
+                      ongoing support, we create visually stunning,
+                      user-friendly, and SEO-optimized websites that drive
+                      traffic, engagement, and conversions—empowering your
+                      success in the digital marketplace.
                     </p>
 
                     <div className="mt-30">
@@ -50,7 +49,6 @@ function Intro() {
                         <li className="mb-10">Front-End Development</li>
                         <li className="mb-10">Back-End Development</li>
                         <li className="mb-10">Full-Stack Solutions</li>
-                        <li className="mb-10">CMS & E-commerce Integration</li>
                         <li className="mb-10">CMS & E-commerce Integration</li>
                       </ul>
                     </div>
@@ -113,7 +111,8 @@ function Intro() {
                 <div className="sec-head mb-50">
                   <h6 className="sub-title main-color mb-15">Why choose us?</h6>
                   <h3>
-                    The creative process behind <br /> our digital marketing.
+                    The creative process behind <br /> our web development
+                    solutions.
                   </h3>
                 </div>
                 <div className="accordion bord">
@@ -122,39 +121,57 @@ function Intro() {
                     data-wow-delay=".1s"
                   >
                     <div onClick={openAccordion} className="title">
-                      <h6>Designing Content With AI Power</h6>
+                      <h6>Front-End Development</h6>
                       <span className="ico ti-plus"></span>
                     </div>
                     <div className="accordion-info">
                       <p className="">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
+                        We craft intuitive, responsive user interfaces that
+                        bring your brand to life. Our front-end solutions ensure
+                        seamless experiences across all devices and platforms.
                       </p>
                     </div>
                   </div>
 
                   <div className="item wow fadeInUp" data-wow-delay=".3s">
                     <div onClick={openAccordion} className="title">
-                      <h6>Talented, Professional & Expert Team</h6>
+                      <h6>Back-End Development</h6>
                       <span className="ico ti-plus"></span>
                     </div>
                     <div className="accordion-info">
                       <p className="">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
+                        We build powerful, secure, and scalable server-side
+                        systems that keep your applications running smoothly.
+                        Our back-end solutions ensure performance, reliability,
+                        and seamless integration.
                       </p>
                     </div>
                   </div>
-
-                  <div className="item wow fadeInUp" data-wow-delay=".5s">
+                  <div className="item wow fadeInUp" data-wow-delay=".3s">
                     <div onClick={openAccordion} className="title">
-                      <h6>We Build and Activate Brands</h6>
+                      <h6>CMS & E-commerce Integration</h6>
                       <span className="ico ti-plus"></span>
                     </div>
                     <div className="accordion-info">
                       <p className="">
-                        Taken possession of my entire soul, like these sweet
-                        mornings of spring which i enjoy with my whole.
+                        We integrate powerful CMS and e-commerce platforms to
+                        streamline content management and boost online sales.
+                        Our solutions offer flexibility, scalability, and a
+                        seamless user experience.{" "}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="item wow fadeInUp" data-wow-delay=".5s">
+                    <div onClick={openAccordion} className="title">
+                      <h6>Full-Stack Solutions</h6>
+                      <span className="ico ti-plus"></span>
+                    </div>
+                    <div className="accordion-info">
+                      <p className="">
+                        We deliver end-to-end web solutions, combining front-end
+                        finesse with robust back-end architecture. Our
+                        full-stack expertise ensures a cohesive, scalable, and
+                        high-performing digital experience
                       </p>
                     </div>
                   </div>

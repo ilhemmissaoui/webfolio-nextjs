@@ -6234,7 +6234,7 @@ footer.clean-footer.crev .circle-blur {
 /* Process
 -----------------------------------------------------------------*/
 .item-box {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
